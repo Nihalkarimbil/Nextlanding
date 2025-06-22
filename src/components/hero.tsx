@@ -1,57 +1,50 @@
+"use client";
+
 import React from "react";
+import Image from "next/image";
 import { Star, ArrowRight } from "lucide-react";
 
 function Hero() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <nav
-        className="flex justify-between items-center p-8 relative"
-        style={{
-          backgroundImage: "url('/navbanner.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div className="relative bg-black text-white h-[700px] md:min-h-screen overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0 top-2 md:top-0">
+        <Image
+          src="/herobanner.jpg" 
+          alt="Hero Background"
+          width={500}
+          height={500}
+          className="object-cover w-full"
+          priority
+        />
+      </div>
 
-        {/* Logo */}
-        <div className="text-2xl font-bold text-white relative z-10">LOGO</div>
+      {/* Navigation */}
+      <nav className="flex justify-between items-center p-8 relative z-10">
+        <div className="text-2xl font-bold text-white">LOGO</div>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex space-x-8 relative z-10">
-          <a href="#" className="text-gray-300 hover:text-white">
-            Home
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white">
-            Portfolio
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white">
-            Benefits
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white">
-            Services
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white">
-            Pricing
-          </a>
-          <a href="#" className="text-gray-300 hover:text-white">
-            FAQ
-          </a>
+        <div className="hidden md:flex space-x-8">
+          {["Home", "Portfolio", "Benefits", "Services", "Pricing", "FAQ"].map(
+            (item) => (
+              <a key={item} href="#" className="text-gray-300 hover:text-white">
+                {item}
+              </a>
+            )
+          )}
         </div>
 
-        {/* CTA Button */}
-        <button className="bg-black text-white border-2 border-yellow-500 px-6 py-2 rounded-full font-semibold flex items-center gap-2 relative z-10">
+     
+        <button className="bg-black text-white border-2 border-yellow-500 px-6 py-2 rounded-full font-semibold flex items-center gap-2">
           Book a demo
           <ArrowRight className="w-4 h-4" />
         </button>
       </nav>
 
-      <div className="flex flex-col items-center justify-center min-h-[80vh] px-6 text-center">
-        {/* Reviews */}
-        <div className="mb-8 flex items-center gap-2">
+  
+      <div className="flex flex-col items-center justify-center h-[60vh] md:h-[80vh] px-6 text-center relative z-10">
+    
+        <div className="mb-1 md:mb-8 flex items-center gap-2">
           <span className="text-white font-bold">5.0</span>
           <div className="flex gap-1">
             {[...Array(5)].map((_, i) => (
@@ -65,9 +58,9 @@ function Hero() {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-xl md:text-5xl font-bold mb-6 leading-tight max-w-6xl">
+        <p className="text-3xl md:text-6xl font-bold mb-6 leading-tight max-w-6xl">
           Partner with a Full-Service Design Team for All Your Creative Needs
-        </h1>
+        </p>
 
         {/* Subtitle */}
         <p className="text-xl text-gray-400 mb-8 max-w-2xl">

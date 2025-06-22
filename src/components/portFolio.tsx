@@ -47,15 +47,15 @@ export default function PortfolioSection() {
         <div className="flex flex-col lg:flex-row justify-between items-start mb-16">
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <div className="inline-block mb-6">
-              <span className="bg-green-800 text-green-200 px-4 py-2 rounded-full text-sm font-medium">
+              <span className="bg-[#121212] text-yellow-400 px-4 py-2 rounded-full text-sm font-medium">
                 Portfolio
               </span>
             </div>
-            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-light leading-tight">
+            <p className="text-4xl lg:text-5xl xl:text-6xl font-light leading-tight">
               Exceptional work
               <br />
               you deserve
-            </h2>
+            </p>
           </div>
 
           <div className="lg:w-1/2 lg:pl-16">
@@ -81,10 +81,7 @@ export default function PortfolioSection() {
                   width={500}
                   height={400}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  
                 />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition-all duration-300" />
               </div>
 
               {/* Content */}
