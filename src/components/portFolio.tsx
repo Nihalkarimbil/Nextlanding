@@ -61,14 +61,14 @@ export default function PortfolioSection() {
           <div className="lg:w-1/2 lg:pl-16">
             <p className="text-gray-400 text-lg leading-relaxed">
               From tech startups to healthcare giants, e-commerce pioneers to
-              edtech, we've left our mark on diverse domains.
+              edtech, we&apos;ve left our mark on diverse domains.
             </p>
           </div>
         </div>
 
         {/* Portfolio Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {portfolioItems.map((item, index) => (
+          {portfolioItems.map((item) => (
             <div
               key={item.id}
               className={`relative group cursor-pointer overflow-hidden rounded-2xl bg-gray-900 hover:bg-gray-800 transition-all duration-300 `}
