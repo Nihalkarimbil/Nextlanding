@@ -7,7 +7,7 @@ import { Star, ArrowRight } from "lucide-react";
 function Hero() {
   return (
     <div className="relative bg-black text-white h-[700px] md:min-h-screen overflow-hidden">
-      {/* Background Image */}
+      
       <div className="absolute inset-0 z-0 top-2 md:top-0">
         <Image
           src="/herobanner.jpg" 
@@ -19,11 +19,10 @@ function Hero() {
         />
       </div>
 
-      {/* Navigation */}
+      
       <nav className="flex justify-between items-center p-8 relative z-10">
         <div className="text-2xl font-bold text-white">LOGO</div>
 
-        {/* Navigation Links */}
         <div className="hidden md:flex space-x-8">
           {["Home", "Portfolio", "Benefits", "Services", "Pricing", "FAQ"].map(
             (item) => (
@@ -57,17 +56,13 @@ function Hero() {
           <span className="text-gray-400 text-sm">11 reviews</span>
         </div>
 
-        {/* Main Headline */}
         <p className="text-3xl md:text-6xl font-bold mb-6 leading-tight max-w-6xl">
           Partner with a Full-Service Design Team for All Your Creative Needs
         </p>
 
-        {/* Subtitle */}
         <p className="text-xl text-gray-400 mb-8 max-w-2xl">
           Skip the hassle of finding the perfect full-time designer or studio
         </p>
-
-        {/* CTA Button */}
         <button className="bg-yellow-500 text-black px-8 py-4 rounded-full font-semibold text-lg flex items-center gap-3">
           Connect us
           <ArrowRight className="w-5 h-5" />

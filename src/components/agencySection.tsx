@@ -28,7 +28,7 @@ const AgencySection = () => {
     <div className="min-h-screen bg-black text-white px-4 md:px-8 py-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
-          {/* Projects Section */}
+       
           <div className="lg:col-span-4 bg-gray-200 text-black rounded-3xl p-6 md:p-8">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold leading-tight">
@@ -55,7 +55,7 @@ const AgencySection = () => {
             </div>
           </div>
 
-          {/* Testimonial Section */}
+       
           <div className="lg:col-span-8 bg-[#121212] rounded-3xl p-6 md:p-8 relative overflow-hidden">
             <div className="hidden md:block absolute top-36 right-6">
               <Image src="/leaf.svg" alt="leaf" width={50} height={50} />
@@ -80,7 +80,6 @@ const AgencySection = () => {
           </div>
         </div>
 
-        {/* About Section */}
         <div className="bg-[#121212] rounded-3xl p-6 md:p-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>

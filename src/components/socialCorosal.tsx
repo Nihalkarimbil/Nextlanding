@@ -16,7 +16,6 @@ const LogoCarousel = () => {
         <div className="flex animate-scroll">
 
 
-          {/* Second set of logos for seamless loop */}
           <div className="flex items-center justify-around min-w-full px-8">
             
               <div className="flex-shrink-0 mx-8">

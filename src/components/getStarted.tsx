@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function PayAndGetStarted() {
+export default function GetStartedSection() {
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
       <div className="relative z-10 container mx-auto px-4 py-20">
-        {/* Header */}
+       
         <div className="text-center mb-16">
           <div className="inline-block mb-6">
             <button className="bg-[#121212] hover:bg-stone-900 text-yellow-400 px-6 py-2 border-2 border-yellow-400 rounded-full text-sm font-thin transition-colors">
@@ -40,7 +40,6 @@ export default function PayAndGetStarted() {
             </p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-[#121212] bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 hover:bg-opacity-90 transition-all duration-300">
             <div className="w-12 h-12 border-2 border-yellow-400 rounded-full flex items-center justify-center mb-6">
               <span className="text-yellow-400 font-semibold text-lg">2</span>
@@ -55,7 +54,7 @@ export default function PayAndGetStarted() {
             </p>
           </div>
 
-          {/* Card 3 */}
+        
           <div className="bg-[#121212] bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 hover:bg-opacity-90 transition-all duration-300">
             <div className="w-12 h-12 border-2 border-yellow-400 rounded-full flex items-center justify-center mb-6">
               <span className="text-yellow-400 font-semibold text-lg">3</span>

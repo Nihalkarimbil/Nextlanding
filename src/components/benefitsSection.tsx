@@ -49,7 +49,7 @@ export default function BenefitsSection() {
 
   return (
     <div className="min-h-screen bg-black text-white p-8">
-      {/* Header */}
+  
       <div className="text-center mb-16">
         <div className="inline-block bg-[#121212] text-yellow-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
           Benefits
@@ -61,14 +61,12 @@ export default function BenefitsSection() {
         </p>
       </div>
 
-      {/* Features Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {benefits.map((benefit) => (
           <div
             key={benefit.id}
             className="rounded-2xl p-8 relative overflow-hidden group transition-all duration-300"
           >
-            {/* Image Container */}
             <div className="mb-8 relative h-48 rounded-xl overflow-hidden bg-gray-800">
               <Image
                 src={benefit.image}

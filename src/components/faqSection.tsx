@@ -72,7 +72,7 @@ const FAQSection = () => {
   return (
     <div className="min-h-screen bg-black text-white py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
+       
         <div className="text-center mb-16">
           <div className="inline-block mb-8 px-6 py-2 bg-gradient-to-r from-yellow-600 to-yellow-500 rounded-full text-sm font-medium">
             Insights
@@ -84,7 +84,7 @@ const FAQSection = () => {
           </p>
         </div>
 
-        {/* FAQ Items */}
+        
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div

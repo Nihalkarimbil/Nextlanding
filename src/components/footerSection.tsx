@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Linkedin, Youtube, Globe, AtSign, Code } from "lucide-react";
 
-const CTASection = () => {
+const FooterSection = () => {
   return (
     <section className="bg-black text-white min-h-[400px] flex flex-col relative overflow-hidden">
       
@@ -20,7 +20,6 @@ const CTASection = () => {
         
       </div>
 
-      {/* Main CTA Content */}
       <div className="flex-1 flex items-center justify-center px-6 py-20 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-8">
@@ -35,8 +34,6 @@ const CTASection = () => {
           </button>
         </div>
       </div>
-
-      {/* Footer */}
       <footer className="border-t border-gray-800 px-6 py-6 relative z-10 mt-auto">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
@@ -86,4 +83,4 @@ const CTASection = () => {
   );
 };
 
-export default CTASection;
+export default FooterSection;

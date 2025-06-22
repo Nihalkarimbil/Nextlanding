@@ -19,12 +19,12 @@ const ServicesSection = () => {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center overflow-hidden relative">
-      {/* Services badge */}
+      
       <div className="mb-1 px-6 py-3 bg-[#121212] text-yellow-400  rounded-full text-sm font-medium">
         Services
       </div>
 
-      {/* Main heading */}
+    
       <div className="text-center mb-16 px-4 max-w-4xl">
         <p className="text-5xl md:text-7xl font-light leading-tight">
           All you want,
@@ -33,9 +33,8 @@ const ServicesSection = () => {
         </p>
       </div>
 
-      {/* Auto-scrolling service tags container */}
       <div className="relative  overflow-hidden">
-        {/* First row - scrolling left to right */}
+        
         <div className="flex whitespace-nowrap mb-6 w-6xl">
           <div className="flex animate-scroll-right">
             {[...services, ...services].map((service, index) => (
@@ -49,7 +48,6 @@ const ServicesSection = () => {
           </div>
         </div>
 
-        {/* Second row - scrolling right to left */}
         <div className="flex whitespace-nowrap">
           <div className="flex animate-scroll-left">
             {[...services.reverse(), ...services].map((service, index) => (

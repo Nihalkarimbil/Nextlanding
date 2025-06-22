@@ -5,7 +5,7 @@ const PricingSection = () => {
   return (
     <div className="min-h-screen bg-black text-white py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+        
         <div className="text-center mb-16">
           <div className="inline-block mb-8 px-6 py-2 bg-[#121212] text-yellow-400 rounded-full text-sm font-medium">
             Pricing
@@ -17,9 +17,8 @@ const PricingSection = () => {
           </p>
         </div>
 
-        {/* Pricing Cards */}
         <div className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {/* Standard Plan */}
+         
           <div className="bg-[#121212] bg-opacity-50 backdrop-blur-sm border border-[#1F1F1F] rounded-3xl p-8 hover:bg-stone-900 hover:bg-opacity-50 transition-all duration-300">
             <div className="mb-8">
               <h3 className="text-gray-400 text-sm font-medium mb-4">
@@ -66,7 +65,7 @@ const PricingSection = () => {
             </div>
           </div>
 
-          {/* Pro Plan */}
+       
           <div className="bg-[#121212] bg-opacity-50 backdrop-blur-sm border border-[#1F1F1F] rounded-3xl p-8 hover:bg-stone-900 hover:bg-opacity-50 transition-all duration-300 relative">
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
               <div className="bg-yellow-500 text-black px-4 py-1 rounded-full text-xs font-medium">
@@ -116,10 +115,8 @@ const PricingSection = () => {
               </button>
             </div>
           </div>
-
-          {/* Project-Based Plan */}
           <div className="flex flex-col gap-6 max-w-sm mx-auto text-white">
-            {/* Project-Based Card */}
+            
             <div className="bg-[#121212] rounded-3xl h-[460px] p-6 border border-[#1F1F1F]">
               <h3 className="text-xs text-gray-400 font-medium mb-3">
                 PROJECT-BASED
@@ -148,7 +145,6 @@ const PricingSection = () => {
               </button>
             </div>
 
-            {/* Refer & Earn Card */}
             <div className="bg-[#121212] rounded-3xl p-6 border border-[#1F1F1F]">
               <h3 className="text-xl font-medium mb-2">Refer & earn</h3>
               <p className="text-sm text-gray-400 mb-6">

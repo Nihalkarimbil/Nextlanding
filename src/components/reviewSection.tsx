@@ -63,12 +63,11 @@ const TestimonialsSection = () => {
 
     let animationId: number;
     let scrollPosition = 0;
-    const scrollSpeed = 0.5; // pixels per frame
+    const scrollSpeed = 0.5; 
 
     const scroll = () => {
       scrollPosition += scrollSpeed;
 
-      // Reset position when we've scrolled past the first set of testimonials
       if (scrollPosition >= scrollEl.scrollHeight / 2) {
         scrollPosition = 0;
       }
@@ -77,12 +76,11 @@ const TestimonialsSection = () => {
       animationId = requestAnimationFrame(scroll);
     };
 
-    // Start scrolling after a brief delay
+ 
     const timer = setTimeout(() => {
       animationId = requestAnimationFrame(scroll);
     }, 1000);
 
-    // Pause scrolling on hover
     const handleMouseEnter = () => {
       cancelAnimationFrame(animationId);
     };
@@ -101,8 +99,6 @@ const TestimonialsSection = () => {
       scrollEl.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
-
-  // Duplicate testimonials for seamless scrolling
   const duplicatedTestimonials = [...testimonials, ...testimonials];
 
   return (
