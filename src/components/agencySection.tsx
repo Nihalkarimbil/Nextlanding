@@ -14,63 +14,35 @@ const AgencySection = () => {
     });
   }, []);
 
-  const projects = [
-    {
-      id: 1,
-      title: "Refashionistas - premium's first",
-      image: "/api/placeholder/200/250",
-      category: "Fashion",
-    },
-    {
-      id: 2,
-      title: "Onesoft — marketing strategy",
-      image: "/api/placeholder/200/250",
-      category: "Marketing",
-    },
-    {
-      id: 3,
-      title: "TreeHouse — immersive conversation kit",
-      image: "/api/placeholder/200/250",
-      category: "Technology",
-    },
-  ];
+  
 
   return (
     <div className="min-h-screen bg-black text-white px-4 md:px-8 py-8">
       <div className="max-w-7xl mx-auto">
-       
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
-         
           <div
-            className="lg:col-span-4 bg-gray-200 text-black rounded-3xl p-6 md:p-8"
+            className="lg:col-span-4 bg-gray-200 text-black rounded-3xl pt-9 px-5"
             data-aos="fade-right"
           >
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold leading-tight">
-                Our <br /> Projects
-              </h2>
-              <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                <span className="text-white text-sm">{projects.length}</span>
-              </div>
+            <div className="flex items-center justify-between ">
+              <video
+                className="w-full rounded-xl h-full"
+                controls
+                muted
+                loop
+                preload="auto"
+              >
+                <source
+                  src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {projects.map((project) => (
-                <div key={project.id} className="relative">
-                  <div className="bg-neutral-900 rounded-lg aspect-[4/3] mb-2 overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-700 flex items-center justify-center text-gray-600 text-sm">
-                      Project {project.id}
-                    </div>
-                  </div>
-                  <p className="text-xs font-medium leading-tight">
-                    {project.title}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4"></div>
           </div>
 
-         
           <div
             className="lg:col-span-8 bg-[#121212] rounded-3xl p-6 md:p-8 relative overflow-hidden"
             data-aos="fade-left"
@@ -97,7 +69,6 @@ const AgencySection = () => {
           </div>
         </div>
 
-        
         <div className="bg-[#121212] rounded-3xl p-6 md:p-8" data-aos="fade-up">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
