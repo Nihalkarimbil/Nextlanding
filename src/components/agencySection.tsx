@@ -1,8 +1,19 @@
+"use client";
 
+import React, { useEffect } from "react";
 import Image from "next/image";
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AgencySection = () => {
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      duration: 800,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   const projects = [
     {
       id: 1,
@@ -27,9 +38,13 @@ const AgencySection = () => {
   return (
     <div className="min-h-screen bg-black text-white px-4 md:px-8 py-8">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
        
-          <div className="lg:col-span-4 bg-gray-200 text-black rounded-3xl p-6 md:p-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+         
+          <div
+            className="lg:col-span-4 bg-gray-200 text-black rounded-3xl p-6 md:p-8"
+            data-aos="fade-right"
+          >
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl font-bold leading-tight">
                 Our <br /> Projects
@@ -55,12 +70,14 @@ const AgencySection = () => {
             </div>
           </div>
 
-       
-          <div className="lg:col-span-8 bg-[#121212] rounded-3xl p-6 md:p-8 relative overflow-hidden">
+         
+          <div
+            className="lg:col-span-8 bg-[#121212] rounded-3xl p-6 md:p-8 relative overflow-hidden"
+            data-aos="fade-left"
+          >
             <div className="hidden md:block absolute top-36 right-6">
               <Image src="/leaf.svg" alt="leaf" width={50} height={50} />
             </div>
-
             <div className="hidden md:block absolute top-36 left-6">
               <Image src="/leaf2.svg" alt="leaf" width={50} height={50} />
             </div>
@@ -80,7 +97,8 @@ const AgencySection = () => {
           </div>
         </div>
 
-        <div className="bg-[#121212] rounded-3xl p-6 md:p-8">
+        
+        <div className="bg-[#121212] rounded-3xl p-6 md:p-8" data-aos="fade-up">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
               <a className="text-4xl md:text-6xl font-thin leading-tight">

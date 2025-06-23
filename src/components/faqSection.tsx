@@ -1,11 +1,20 @@
-"use client"
+"use client";
 
-
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Plus, Minus } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FAQSection = () => {
-    const [openIndex, setOpenIndex]=useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  useEffect(() => {
+    AOS.init({
+     once:false,
+      duration: 800,
+      easing: "ease-in-out",
+    });
+  }, []);
 
   const faqs = [
     {
@@ -72,8 +81,8 @@ const FAQSection = () => {
   return (
     <div className="min-h-screen bg-black text-white py-16 px-4">
       <div className="max-w-4xl mx-auto">
-       
-        <div className="text-center mb-16">
+        
+        <div className="text-center mb-16" data-aos="fade-up">
           <div className="inline-block mb-8 px-6 py-2 bg-gradient-to-r from-yellow-600 to-yellow-500 rounded-full text-sm font-medium">
             Insights
           </div>
@@ -90,6 +99,8 @@ const FAQSection = () => {
             <div
               key={index}
               className="bg-[#121212] bg-opacity-40 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay={index * 75}
             >
               <button
                 onClick={() => toggleFAQ(index)}
