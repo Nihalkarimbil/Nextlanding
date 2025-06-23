@@ -1,16 +1,19 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function PortfolioSection() {
-  AOS.init({
-    once: false,
-    duration: 800,
-    easing: "ease-in-out",
-  });
+  useEffect(()=>{
+    AOS.init({
+      once: false,
+      duration: 800,
+      easing: "ease-in-out",
+    });
+  },[])
+ 
 
   const portfolioItems = [
     {

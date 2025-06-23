@@ -1,15 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function BenefitsSection() {
-  AOS.init({
-    duration: 1000,
-    easing: "ease-in-out",
-  });
+  useEffect(()=>{
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+    });
+  
+  })
 
   const benefits = [
     {
